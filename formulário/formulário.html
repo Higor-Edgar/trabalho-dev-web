@@ -28,12 +28,17 @@
                     <input type="tel" name="telefone" id="telefone"
                     class="inputUser" required>
                 </div>
-                <p>Tipo</p>
-                <input type="radio" name="compra" value="Comprador" required>
-                <label for="Comprador">Comprador</label>
-                <br>
-                <input type="radio" name="venda" value="vendedor" required>
-                <label for="vendedor">Vendedor</label>
+                <form action="/submit">
+                    <p>Tipo de Cliente:</p>
+                    <input type="radio" id="comprador" name="tipo" value="Comprador" required>
+                    <label for="comprador">Comprador</label><br>
+                    
+                    <input type="radio" id="vendedor" name="tipo" value="Vendedor" required>
+                    <label for="vendedor">Vendedor</label><br>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+                
                 <br><br>
                     <label for="data-de-contato"><b>Data de Contato:</b></label>
                     <input type="date" name="data-de-contato" id="data-de-contato" required>
