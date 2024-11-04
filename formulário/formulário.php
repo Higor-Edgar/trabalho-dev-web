@@ -1,3 +1,18 @@
+<?php
+    
+//if(isset($_POST['submit'])){
+  //  print_r($_POST['nome']);
+    //print_r($_POST['email']);
+    //print_r($_POST['telefone']);
+   // print_r($_POST['tipo']);
+   // print_r($_POST['data_de_contato']);
+   // print_r($_POST['estado']);
+   // print_r($_POST['cidade']);
+   // print_r($_POST['bairro']);
+   // print_r($_POST['endereco']);}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +23,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="config.php" method="POST">
             <legend><b>Cadastro de Clientes</b></legend>
             <br>
             <div class="inputBox">
@@ -25,21 +40,15 @@
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" id="telefone" class="inputUser" required>
             </div>
-            <p>Tipo</p>
-            <form action="/submit">
-                <p>Tipo de Cliente:</p>
-                <input type="radio" id="comprador" name="tipo" value="Comprador" required>
-                <label for="comprador">Comprador</label><br>
-                
-                <input type="radio" id="vendedor" name="tipo" value="Vendedor" required>
-                <label for="vendedor">Vendedor</label><br>
-                
-                <input type="submit" value="Enviar">
-            </form>
-            
-            <br><br>
+            <br>
+            <p>Tipo de Cliente:</p>
+            <input type="radio" id="comprador" name="tipo" value="Comprador" required>
+            <label for="comprador">Comprador</label><br>
+            <input type="radio" id="vendedor" name="tipo" value="Vendedor" required>
+            <label for="vendedor">Vendedor</label><br>
+            <br>
             <label for="data-de-contato"><b>Data de Contato:</b></label>
-            <input type="date" name="data-de-contato" id="data-de-contato" required>
+            <input type="date" name="data_de_contato" id="data_de_contato" required>
             <br>
             <div class="inputBox">
                 <label for="estado">Estado</label>
@@ -61,4 +70,10 @@
                 <input type="text" name="endereco" id="endereco" class="inputUser" required>
             </div>
             <br>
-            <input type="submit"
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
