@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Iniciar a sessão de usuário
             $_SESSION['username'] = $username;
             // Redirecionar para a página desejada
-            header("Location: imoveis/imoveis.html");
+            header("Location: imoveis.html");
             exit();
         } else {
             // Definir mensagem de erro
