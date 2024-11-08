@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<?php
-    
-//if(isset($_POST['submit'])){
-  //  print_r($_POST['nome']);
-    //print_r($_POST['email']);
-    //print_r($_POST['telefone']);
-   // print_r($_POST['tipo']);
-   // print_r($_POST['data_de_contato']);
-   // print_r($_POST['estado']);
-   // print_r($_POST['cidade']);
-   // print_r($_POST['bairro']);
-   // print_r($_POST['endereco']);}
-
-?>
-=======
->>>>>>> 2f5e4df (alterações na página de login, com erro de usuário inválido)
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,11 +8,7 @@
 </head>
 <body>
     <div class="box">
-<<<<<<< HEAD
-        <form action="config.php" method="POST">
-=======
-        <form action="config.php" method= "POST">
->>>>>>> 2f5e4df (alterações na página de login, com erro de usuário inválido)
+        <form action="formulario.php" method="post">
             <legend><b>Cadastro de Clientes</b></legend>
             <br>
             <div class="inputBox">
@@ -47,19 +25,15 @@
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" id="telefone" class="inputUser" required>
             </div>
+            <p>Tipo</p>
+            <input type="radio" name="tipo" value="Comprador" required>
+            <label for="Comprador">Comprador</label>
             <br>
-            <p>Tipo de Cliente:</p>
-            <input type="radio" id="comprador" name="tipo" value="Comprador" required>
-            <label for="comprador">Comprador</label><br>
-            <input type="radio" id="vendedor" name="tipo" value="Vendedor" required>
-            <label for="vendedor">Vendedor</label><br>
-            <br>
-<<<<<<< HEAD
+            <input type="radio" name="tipo" value="Vendedor" required>
+            <label for="Vendedor">Vendedor</label>
+            <br><br>
             <label for="data-de-contato"><b>Data de Contato:</b></label>
-=======
-            <label for="data_de_contato"><b>Data de Contato:</b></label>
->>>>>>> 2f5e4df (alterações na página de login, com erro de usuário inválido)
-            <input type="date" name="data_de_contato" id="data_de_contato" required>
+            <input type="date" name="data-de-contato" id="data-de-contato" required>
             <br>
             <div class="inputBox">
                 <label for="estado">Estado</label>
@@ -81,13 +55,9 @@
                 <input type="text" name="endereco" id="endereco" class="inputUser" required>
             </div>
             <br>
-            <input type="submit" name="submit" id="submit">
+                        <input type="submit" name="submit" id="submit">
         </form>
     </div>
 </body>
 </html>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 2f5e4df (alterações na página de login, com erro de usuário inválido)
+            

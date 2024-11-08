@@ -42,4 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $conn = null;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2f5e4df (alterações na página de login, com erro de usuário inválido)
